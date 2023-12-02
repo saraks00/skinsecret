@@ -3,3 +3,27 @@
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
 }
+
+.header-line{
+    grid-row: 1;
+}
+
+.header{
+    grid-row: 1;
+}
+
+section{
+    grid-row: 2;
+}
+
+.article1{
+    grid-row: 2;
+}
+
+.article2{
+    grid-row: 3;
+}
+
+.article3{
+    grid-row: 3;
+}
