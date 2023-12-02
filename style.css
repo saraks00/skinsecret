@@ -1,28 +1,30 @@
 .pagecontainer{
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-areas: "section section section"
+                            "header header header"
+                            "main main";
 }
 
 .header-line{
-    grid-row: 1;
+    grid-area: section section section;
 }
 
 .header{
-    grid-row: 1;
+    grid-area: header header header;
 }
 
 section{
-    grid-row: 2;
+    grid-area: main main;
 }
 
 .article1{
-    grid-row: 2;
+    grid-area: main main;
 }
 
 .article2{
-    grid-row: 3;
+    grid-area: main;
 }
 
 .article3{
-    grid-row: 3;
+    grid-area: main;
 }
