@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;500&display=swap');
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 500px){
     body{
         margin: 0%;
         padding: 0%;
@@ -83,7 +83,7 @@
     section{
         grid-area: main;
         display: flex;
-        background-image: url(images/produkt.JPG);
+        background-image: url(images/kampanje.png);
         background-size: cover;
         height: 400px;
         width: auto;
@@ -227,7 +227,7 @@
     section{
         grid-area: main;
         display: flex;
-        background-image: url(images/produkt.JPG);
+        background-image: url(images/kampanje.png);
         background-size: cover;
         height: 700px;
         width: auto;
