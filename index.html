@@ -24,30 +24,51 @@
             <li><i class="fa-regular fa-user"></i></li>
             <li><i class="fa-solid fa-magnifying-glass"></i></li>
         </ul>
+        <a id="ham-icon" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+        <ul id="dropdown">
+            <a id="close" onclick="closeNav()"><i class="fa-solid fa-circle-xmark"></i></a>
+            <li>Produkter</li>
+            <li>Hud</li>
+            <li>Merker</li>
+            <li>Om Skinsecret</li>
+            <li>Blogg</li>
+        </ul>
     </header>
     <main>
         <section>
-            <p>Husk å ta vare på huden! Få 20% på PURITO produkter</p>
+            <p class="text1">Husk å ta vare på huden!</p>
+            <p class="text2">Få 20% på PURITO produkter</p>
         </section>
         <article class="article1">
             <h1>Skinsecret er koreansk hudpleie</h1>
             <p>SkinSecret er en norsk nettbutikk med et bredt utvalg av koreansk hudpleie. Våre produkter er fra ledende merker i Sør-Korea og går gjennom en omfattende prosess før de tilbys hos oss. 
                 Vi tilbyr merker som Acwell, Banila Co, COSRX, Isntree, IUNIK, I’m from, Skin1004, Neogen, og Purito.</p>
         </article>
-        <article class="article2">
-            <img src="images/" alt="Person med hudpleieprodukt">
-            <h2>Ny til koreansk hudpleie?</h2>
-            <p>Er du ny til koreansk hudpleie og er nysjerrig på dette? Vi forklarer litt om koreansk hudpleie og hvorfor du bør prøve det.</p>
-            <button>Les mer</button>
-        </article>
-        <article class="article3">
-            <img src="images/" alt="Hudpleieprodukter">
-            <h2>Kom igang med en enkel hudpleierutine</h2>
-            <p>Har du lyst til å begynne med hupleie, men er litt usikker på hva du skal starte med? Følg denne rutinen for en rask og enkel start.</p>
-            <button>Les mer</button>
-        </article>
+        <div class="articleBox">
+            <article class="article2">
+                <img src="images/person.JPG" alt="Person med hudpleieprodukt">
+                <h2>Ny til koreansk hudpleie?</h2>
+                <p>Er du ny til koreansk hudpleie og er nysjerrig på dette? Vi forklarer litt om koreansk hudpleie og hvorfor du bør prøve det.</p>
+                <button>Les mer</button>
+            </article>
+            <article class="article3">
+                <img src="images/rutine.JPG" alt="Hudpleieprodukter">
+                <h2>Kom igang med en enkel hudpleierutine</h2>
+                <p>Har du lyst til å begynne med hupleie, men er litt usikker på hva du skal starte med? Følg denne rutinen for en rask og enkel start.</p>
+                <button>Les mer</button>
+            </article>
+        </div>    
     </main>
 </div>
-<script src="https://kit.fontawesome.com/f3a4bf1de2.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f3a4bf1de2.js" crossorigin="anonymous">
+ const menu = document.getElementById("dropdown")
+        function openNav(){
+            menu.style.width = "100%"
+        }
+
+        function closeNav(){
+            menu.style.width = "0%"
+        }
+</script>
 </body>
 </html>
